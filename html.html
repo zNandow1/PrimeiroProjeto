@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa dedicada a ajudar imigrantes, refugiados e necessitados com suporte e recursos.">
+    <title>Empresa de Apoio a Imigrantes e Refugiados</title>
+    <style>
+        /* Estilo Geral */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7e6; /* Fundo verde suave */
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Cabeçalho */
+        header {
+            position: relative;
+            height: 100vh;
+            background: url('imagem_de_mendigos.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Seções */
+        section {
+            padding: 50px 0;
+            color: #000; /* Texto em preto */
+        }
+
+        section#sobre {
+            background-color: #fff;
+        }
+
+        section#servicos {
+            background-color: #c2e0c2; /* Verde suave para a seção de serviços */
+        }
+
+        .image-background {
+            background: url('imagem_de_ajuda.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: left;
+            padding: 60px 20px;
+        }
+
+        .image-background h2, .image-background p {
+            color: #fff;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com imagem de fundo -->
+    <header>
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Juntos para um Futuro Melhor</h1>
+            <p>Suporte aos Imigrantes, Refugiados e Necessitados</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção sobre a empresa -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma organização dedicada a apoiar imigrantes, refugiados e pessoas necessitadas. Oferecemos suporte em diversas áreas, incluindo ajuda jurídica, serviços de integração e assistência humanitária.</p>
+            <img src="https://www.google.com/imgres?imgurl=https://api.metro1.com.br/noticias/77071,relatorio-aponta-que-14-dos-imigrantes-venezuelanos-viraram-mendigos-na-fuga-do-pais-3.jpg&imgrefurl=https://www.metro1.com.br/noticias/internacional/77071,relatorio-aponta-que-14percent-dos-imigrantes-venezuelanos-viraram-mendigos-na-fuga-do-pais&h=752&w=1600&tbnid=O1r8cARR1FEWKM&source=sa.im&tbnh=154&tbnw=328&usg=AI4_-kTW7VgRYrIxlvQwtqKeY_qMs02cCA&vet=1&docid=qZeZrFOv4c-DWM alt="Imagem de mendigos/imigrantes necessitados" style="width: 100%; max-width: 600px; display: block; margin: 20px auto;">
+        </div>
+    </section>
+
+    <!-- Seção de serviços oferecidos -->
+    <section id="servicos" class="image-background">
+        <div class="container">
+            <h2>Serviços</h2>
+            <ul>
+                <li><strong>Assistência Jurídica:</strong> Orientação para regularização de documentos e processos legais.</li>
+                <li><strong>Integração Social:</strong> Programas de apoio para adaptação e integração cultural.</li>
+                <li><strong>Ajuda Humanitária:</strong> Distribuição de alimentos, roupas e itens essenciais para os necessitados.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para saber mais sobre como podemos ajudar:</p>
+            <form action="enviar_formulario.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Empresa de Apoio a Imigrantes e Refugiados. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
